@@ -29,8 +29,10 @@ public class MissingNumber {
 
     }
     public static int missingNumber(int[] nums) {
-        int n = nums.length, sum = n*(n+1)/2;
-        for(int i : nums){ sum -= i;
+        int n = nums.length,
+                sum = n*(n+1)/2;
+        for(int i : nums){
+            sum -= i;
     }
         return sum;
     }
